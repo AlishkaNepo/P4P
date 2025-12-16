@@ -16,18 +16,20 @@
     }
 
     body{
-      background:#111;
-      color:#fff;
-      min-height:100vh;
-      display:flex;
-      justify-content:center;
-      padding:20px;
-    }
+  background:#111;
+  color:#fff;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  padding:0; /* ← убрали отступы */
+}
+
 
     /* ===== CONTAINER ===== */
     .container{
-      width:100%;
-      max-width:900px;
+      width:100vw;
+      max-width:none;
+      margin:0;
       background:#1a1a1a;
       border-radius:14px;
       overflow:hidden;
