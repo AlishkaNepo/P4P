@@ -1,105 +1,97 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P4P Рейтинг Бойцов</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>P4P Рейтинг — Mobile</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    :root{
+      --bg:#0f0f0f;
+      --card:#1a1a1a;
+      --red:#e60000;
+      --text:#ffffff;
+      --muted:#bdbdbd;
+    }
+
     *{
       margin:0;
       padding:0;
       box-sizing:border-box;
-      font-family:'Inter', sans-serif;
+      font-family:'Inter',sans-serif;
+      -webkit-tap-highlight-color: transparent;
     }
 
     body{
-  background:#111;
-  color:#fff;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  padding:0; /* ← убрали отступы */
-}
+      background:var(--bg);
+      color:var(--text);
+    }
 
+    /* HEADER */
+    header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:#141414;
+      border-bottom:2px solid var(--red);
+    }
 
-    /* ===== CONTAINER ===== */
-    .container{
-  width:1250px;          /* ← фиксированная ширина */
-  max-width:1250px;
-  background:#1a1a1a;
-  border-radius:18px;
-  overflow:hidden;
-  border:2px solid #e60000;
-  margin:0 auto 0 -70px;         /* ← центр по экрану */
-}
-
-
-    /* ===== HEADER ===== */
-    .header{
+    .header-inner{
       display:flex;
       justify-content:space-between;
       align-items:center;
-      padding:16px 20px;
-      border-bottom:2px solid #e60000;
+      padding:14px 16px;
     }
 
     .logo{
-      font-size:24px;
+      font-size:18px;
       font-weight:700;
-      color:#e60000;
+      color:var(--red);
     }
 
-    .header a{
-      background:#e60000;
+    .btn{
+      background:var(--red);
       color:#fff;
       text-decoration:none;
-      padding:8px 14px;
-      border-radius:6px;
-      font-weight:600;
-      font-size:14px;
-    }
-
-    /* ===== TABLE HEADER ===== */
-    .table-head{
-      display:grid;
-      grid-template-columns: 1fr 1fr 2fr;
-      background:#e60000;
-      font-size:18px;
+      padding:7px 14px;
+      border-radius:20px;
+      font-size:13px;
       font-weight:600;
     }
 
-    .table-head div{
-      padding:15px;
-      text-align:center;
+    /* LIST */
+    .list{
+      padding:12px 10px 20px;
     }
 
-    /* ===== ROWS ===== */
-    .row{
-      display:grid;
-      grid-template-columns: 1fr 1fr 2fr;
+    .fighter-card{
+      display:flex;
       align-items:center;
-      padding:14px 0;
+      gap:12px;
+      background:var(--card);
+      border:2px solid var(--red);
+      border-radius:14px;
+      padding:12px;
+      margin-bottom:12px;
     }
 
-    .row:nth-child(even){
-      background:#161616;
-    }
-
-    .cell{
+    .rank{
+      font-size:18px;
+      font-weight:700;
+      color:var(--red);
+      width:36px;
       text-align:center;
-      font-size:16px;
     }
 
-    /* ===== PHOTO ===== */
     .photo{
-      width:70px;
-      height:70px;
+      width:56px;
+      height:56px;
       border-radius:50%;
       overflow:hidden;
-      border:3px solid #e60000;
-      margin:auto;
+      border:3px solid var(--red);
+      flex-shrink:0;
     }
 
     .photo img{
@@ -108,81 +100,77 @@
       object-fit:cover;
     }
 
-    /* ===== MOBILE ===== */
-    @media(max-width:480px){
-      .table-head, .row{
-        grid-template-columns: 1fr 1fr 1.5fr;
-      }
+    .info{
+      display:flex;
+      flex-direction:column;
+    }
 
-      .table-head div{
-        font-size:14px;
-        padding:10px;
-      }
+    .name{
+      font-size:15px;
+      font-weight:600;
+    }
 
-      .cell{
-        font-size:14px;
-      }
+    .subtitle{
+      font-size:12px;
+      color:var(--muted);
+    }
 
-      .photo{
-        width:55px;
-        height:55px;
-      }
-
-      .logo{
-        font-size:20px;
-      }
+    /* SMALL PHONES */
+    @media (max-width:360px){
+      .photo{width:50px;height:50px;}
+      .name{font-size:14px;}
+      .rank{font-size:16px;}
     }
   </style>
 </head>
-
 <body>
 
-<div class="container">
-
-  <div class="header">
+<header>
+  <div class="header-inner">
     <div class="logo">P4P Рейтинг</div>
-    <a href="https://AlishkaNepo.github.io/UFC-S/" target="_blank">UFC 344</a>
+    <a class="btn" href="https://AlishkaNepo.github.io/UFC-S/" target="_blank">UFC 344</a>
   </div>
+</header>
 
-  <div class="table-head">
-    <div>Место</div>
-    <div>Фото</div>
-    <div>Имя</div>
-  </div>
+<section class="list">
 
-  <div class="row">
-    <div class="cell">#1</div>
-    <div class="cell">
-      <div class="photo"><img src="tomi.jpg" alt="Танат"></div>
+  <div class="fighter-card">
+    <div class="rank">#1</div>
+    <div class="photo"><img src="tomi.jpg" alt="Танат"></div>
+    <div class="info">
+      <div class="name">Танат</div>
+      <div class="subtitle">Pound for Pound</div>
     </div>
-    <div class="cell">Танат</div>
   </div>
 
-  <div class="row">
-    <div class="cell">#2</div>
-    <div class="cell">
-      <div class="photo"><img src="ali.jpg" alt="Али"></div>
+  <div class="fighter-card">
+    <div class="rank">#2</div>
+    <div class="photo"><img src="ali.jpg" alt="Али"></div>
+    <div class="info">
+      <div class="name">Али</div>
+      <div class="subtitle">Pound for Pound</div>
     </div>
-    <div class="cell">Али</div>
   </div>
 
-  <div class="row">
-    <div class="cell">#3</div>
-    <div class="cell">
-      <div class="photo"><img src="beka2.jpg" alt="Бексултан"></div>
+  <div class="fighter-card">
+    <div class="rank">#3</div>
+    <div class="photo"><img src="beka2.jpg" alt="Бексултан"></div>
+    <div class="info">
+      <div class="name">Бексултан</div>
+      <div class="subtitle">Pound for Pound</div>
     </div>
-    <div class="cell">Бексултан</div>
   </div>
 
-  <div class="row">
-    <div class="cell">#4</div>
-    <div class="cell">
-      <div class="photo"><img src="era.jpg" alt="Ерасыл"></div>
+  <div class="fighter-card">
+    <div class="rank">#4</div>
+    <div class="photo"><img src="era.jpg" alt="Ерасыл"></div>
+    <div class="info">
+      <div class="name">Ерасыл</div>
+      <div class="subtitle">Pound for Pound</div>
     </div>
-    <div class="cell">Ерасыл</div>
   </div>
 
-</div>
+</section>
 
 </body>
 </html>
