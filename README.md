@@ -1,123 +1,129 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P4P Рейтинг Бойцов</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P4P Рейтинг</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
 
-    body {
-      background: #111;
-      color: #fff;
-      padding: 15px;
-    }
+body{
+  background: radial-gradient(circle at top, #222 0%, #0b0b0b 60%);
+  color:#fff;
+  padding:20px;
+}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #1a1a1a;
-      padding: 15px 20px;
-      border-bottom: 2px solid #e60000;
-      margin-bottom: 20px;
-    }
+/* ===== HEADER ===== */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 25px;
+  background:linear-gradient(180deg,#1c1c1c,#141414);
+  border-bottom:2px solid #e60000;
+  border-radius:12px 12px 0 0;
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: 700;
-      color: #e60000;
-    }
+.header h1{
+  color:#e60000;
+  font-size:26px;
+  font-weight:700;
+}
 
-    header a {
-      background: #e60000;
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
-    }
+.header a{
+  background:#e60000;
+  color:#fff;
+  text-decoration:none;
+  padding:8px 18px;
+  border-radius:8px;
+  font-weight:600;
+  font-size:14px;
+}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #1a1a1a;
-      border: 2px solid #e60000;
-      border-radius: 12px;
-      overflow: hidden;
-    }
+/* ===== TABLE WRAPPER ===== */
+.wrapper{
+  background:linear-gradient(180deg,#1a1a1a,#111);
+  border-radius:0 0 16px 16px;
+  padding-bottom:10px;
+  box-shadow:0 20px 40px rgba(0,0,0,.6);
+}
 
-    thead {
-      background: #e60000;
-    }
+/* ===== TABLE ===== */
+table{
+  width:100%;
+  border-collapse:collapse;
+}
 
-    th {
-      padding: 15px;
-      font-size: 18px;
-    }
+thead tr{
+  background:#e60000;
+}
 
-    td {
-      padding: 14px;
-      text-align: center;
-    }
+th{
+  padding:16px;
+  font-size:18px;
+  text-align:center;
+}
 
-    tbody tr:nth-child(even) {
-      background: #161616;
-    }
+tbody tr{
+  height:110px;
+}
 
-    .photo {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 3px solid #e60000;
-      margin: auto;
-    }
+tbody tr:nth-child(odd){
+  background:rgba(255,255,255,0.02);
+}
 
-    .photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+td{
+  text-align:center;
+  font-size:16px;
+}
 
-    @media (max-width: 480px) {
-      th, td {
-        font-size: 14px;
-        padding: 10px;
-      }
+/* ===== PHOTO ===== */
+.photo{
+  width:72px;
+  height:72px;
+  border-radius:50%;
+  overflow:hidden;
+  margin:auto;
+  border:3px solid #e60000;
+}
 
-      .photo {
-        width: 55px;
-        height: 55px;
-      }
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
 
-      .logo {
-        font-size: 20px;
-      }
-    }
-  </style>
+/* ===== MOBILE ===== */
+@media(max-width:480px){
+  th,td{font-size:14px;}
+  .photo{width:55px;height:55px;}
+  .header h1{font-size:20px;}
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <div class="logo">P4P Рейтинг</div>
+<div class="header">
+  <h1>P4P Рейтинг</h1>
   <a href="https://AlishkaNepo.github.io/UFC-S/" target="_blank">UFC 344</a>
-</header>
+</div>
 
+<div class="wrapper">
 <table>
   <thead>
     <tr>
       <th>Место</th>
       <th>Фото</th>
-      <th>Боец</th>
+      <th>Имя</th>
     </tr>
   </thead>
 
@@ -163,6 +169,7 @@
     </tr>
   </tbody>
 </table>
+</div>
 
 </body>
 </html>
