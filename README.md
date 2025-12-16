@@ -102,7 +102,7 @@
 
   <tr>
     <td>#3</td>
-    <td><div class="photo"><img src="img/beka.jpg" alt="Бексултан"></div></td>
+    <td><div class="photo"><img src="img/beka2.jpg" alt="Бексултан"></div></td>
     <td>Бексултан</td>
   </tr>
 
