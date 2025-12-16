@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -33,7 +32,7 @@
   border-radius:18px;
   overflow:hidden;
   border:2px solid #e60000;
-  margin:0 auto;         /* ← центр по экрану */
+  margin:0 auto 0 -40px;         /* ← центр по экрану */
 }
 
 
