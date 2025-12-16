@@ -169,6 +169,24 @@
     </div>
   </div>
 
+  <div class="fighter-card">
+    <div class="rank">#5</div>
+    <div class="photo"><img src="jahan.jpg" alt="Жахан"></div>
+    <div class="info">
+      <div class="name">Жахан</div>
+      <div class="subtitle">Pound for Pound</div>
+    </div>
+  </div>
+
+  <div class="fighter-card">
+    <div class="rank">#6</div>
+    <div class="photo"><img src="roma.jpg" alt="Рома"></div>
+    <div class="info">
+      <div class="name">Рома</div>
+      <div class="subtitle">Pound for Pound</div>
+    </div>
+  </div>
+
 </section>
 
 </body>
