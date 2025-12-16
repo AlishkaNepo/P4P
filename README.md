@@ -90,25 +90,25 @@
 
   <tr>
     <td>#1</td>
-    <td><div class="photo"><img src="img/tomi.jpg" alt="Танат"></div></td>
+    <td><div class="photo"><img src="tomi.jpg" alt="Танат"></div></td>
     <td>Танат</td>
   </tr>
 
   <tr>
     <td>#2</td>
-    <td><div class="photo"><img src="img/ali.jpg" alt="Али"></div></td>
+    <td><div class="photo"><img src="ali.jpg" alt="Али"></div></td>
     <td>Али</td>
   </tr>
 
   <tr>
     <td>#3</td>
-    <td><div class="photo"><img src="img/beka2.jpg" alt="Бексултан"></div></td>
+    <td><div class="photo"><img src="beka2.jpg" alt="Бексултан"></div></td>
     <td>Бексултан</td>
   </tr>
 
   <tr>
     <td>#4</td>
-    <td><div class="photo"><img src="img/era.jpg" alt="Ерасыл"></div></td>
+    <td><div class="photo"><img src="era.jpg" alt="Ерасыл"></div></td>
     <td>Ерасыл</td>
   </tr>
 </table>
