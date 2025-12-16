@@ -27,14 +27,15 @@
 
     /* ===== CONTAINER ===== */
     .container{
-      width:100vw;
-      max-width:none;
-      margin:0;
-      background:#1a1a1a;
-      border-radius:14px;
-      overflow:hidden;
-      border:2px solid #e60000;
-    }
+  width:1250px;          /* ← фиксированная ширина */
+  max-width:1250px;
+  background:#1a1a1a;
+  border-radius:18px;
+  overflow:hidden;
+  border:2px solid #e60000;
+  margin:0 auto;         /* ← центр по экрану */
+}
+
 
     /* ===== HEADER ===== */
     .header{
