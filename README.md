@@ -180,7 +180,7 @@
 
   <div class="fighter-card">
     <div class="rank">#6</div>
-    <div class="photo"><img src="joha.jpg" alt="Жахан"></div>
+    <div class="photo"><img src="jahan.jpg" alt="Жахан"></div>
     <div class="info">
       <div class="name">Жахан</div>
       <div class="subtitle">Pound for Pound</div>
