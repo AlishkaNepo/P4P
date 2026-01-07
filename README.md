@@ -144,18 +144,18 @@
 
   <div class="fighter-card">
     <div class="rank">#2</div>
-    <div class="photo"><img src="ali.jpg" alt="Али"></div>
+    <div class="photo"><img src="beka2.jpg" alt="Бексултан"></div>
     <div class="info">
-      <div class="name">Али</div>
+      <div class="name">Бексултан</div>
       <div class="subtitle">Pound for Pound</div>
     </div>
   </div>
 
   <div class="fighter-card">
     <div class="rank">#3</div>
-    <div class="photo"><img src="beka2.jpg" alt="Бексултан"></div>
+    <div class="photo"><img src="ali.jpg" alt="Али"></div>
     <div class="info">
-      <div class="name">Бексултан</div>
+      <div class="name">Али</div>
       <div class="subtitle">Pound for Pound</div>
     </div>
   </div>
@@ -171,18 +171,36 @@
 
   <div class="fighter-card">
     <div class="rank">#5</div>
-    <div class="photo"><img src="jahan.jpg" alt="Жахан"></div>
+    <div class="photo"><img src="abosh.jpg" alt="Абылай"></div>
     <div class="info">
-      <div class="name">Жахан</div>
+      <div class="name">Абылай</div>
       <div class="subtitle">Pound for Pound</div>
     </div>
   </div>
 
   <div class="fighter-card">
     <div class="rank">#6</div>
+    <div class="photo"><img src="joha.jpg" alt="Жахан"></div>
+    <div class="info">
+      <div class="name">Жахан</div>
+      <div class="subtitle">Pound for Pound</div>
+    </div>
+  </div>
+  
+  <div class="fighter-card">
+    <div class="rank">#7</div>
     <div class="photo"><img src="roma.jpg" alt="Рома"></div>
     <div class="info">
       <div class="name">Рома</div>
+      <div class="subtitle">Pound for Pound</div>
+    </div>
+  </div>
+  
+  <div class="fighter-card">
+    <div class="rank">#8</div>
+    <div class="photo"><img src="ibr.jpg" alt="Ибрахим"></div>
+    <div class="info">
+      <div class="name">Ибрахим</div>
       <div class="subtitle">Pound for Pound</div>
     </div>
   </div>
