@@ -205,6 +205,15 @@
     </div>
   </div>
 
+  <div class="fighter-card">
+    <div class="rank">#9</div>
+    <div class="photo"><img src="alikhan.jpg" alt="Алихан"></div>
+    <div class="info">
+      <div class="name">Алихан</div>
+      <div class="subtitle">Pound for Pound</div>
+    </div>
+  </div>
+
 </section>
 
 </body>
