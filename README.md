@@ -162,15 +162,6 @@
 
   <div class="fighter-card">
     <div class="rank">#4</div>
-    <div class="photo"><img src="era.jpg" alt="Ерасыл"></div>
-    <div class="info">
-      <div class="name">Ерасыл</div>
-      <div class="subtitle">Pound for Pound</div>
-    </div>
-  </div>
-
-  <div class="fighter-card">
-    <div class="rank">#5</div>
     <div class="photo"><img src="abosh.jpg" alt="Абылай"></div>
     <div class="info">
       <div class="name">Абылай</div>
@@ -179,10 +170,19 @@
   </div>
 
   <div class="fighter-card">
-    <div class="rank">#6</div>
+    <div class="rank">#5</div>
     <div class="photo"><img src="jahan.jpg" alt="Жахан"></div>
     <div class="info">
       <div class="name">Жахан</div>
+      <div class="subtitle">Pound for Pound</div>
+    </div>
+  </div>
+
+   <div class="fighter-card">
+    <div class="rank">#6</div>
+    <div class="photo"><img src="era.jpg" alt="Ерасыл"></div>
+    <div class="info">
+      <div class="name">Ерасыл</div>
       <div class="subtitle">Pound for Pound</div>
     </div>
   </div>
